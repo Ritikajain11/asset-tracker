@@ -4,7 +4,7 @@ import AdvanceSearch from '../Pages/AdvanceSearch';
 import BasicSearch from '../Pages/BasicSearch';
 
 const Home = () => {
-  const [showAdvanceSearch, setShowAdvanceSearch] = useState(false);
+  const [showAdvanceSearch] = useState(false);
 
   return (
     <div>
