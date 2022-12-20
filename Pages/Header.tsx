@@ -3,7 +3,7 @@ import { Outlet, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 
-function Layout() {
+function Header() {
   return (
     <div>
       <Navbar bg="dark" variant="dark">
@@ -18,4 +18,4 @@ function Layout() {
   );
 }
 
-export default Layout;
+export default Header;

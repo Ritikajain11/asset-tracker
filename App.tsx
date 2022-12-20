@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from './Pages/Layout';
+import Header from './Pages/Header';
 import NoPage from './Pages/NoPage';
-import Inventory from './Pages/Inventory';
+import Table from './Pages/Table';
 import BasicSearch from './Pages/BasicSearch';
 import AdvanceSearch from './Pages/AdvanceSearch';
 import UpdateAsset from './Pages/UpdateAsset';
@@ -14,11 +14,11 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Header />}>
           <Route index element={<Home />} />
           <Route element={<BasicSearch />} />
           <Route element={<AdvanceSearch />} />
-          <Route element={<Inventory />} />
+          <Route element={<Table />} />
           <Route exact path="/updateAsset/:id" element={<UpdateAsset />} />
           <Route path="*" element={<NoPage />} />
         </Route>

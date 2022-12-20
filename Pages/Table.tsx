@@ -17,7 +17,7 @@ const handleEdit = (e, id) => {
   window.open('https://client-access-asset.stackblitz.io/' + id);
 };
 
-const Inventory = () => {
+const Table = () => {
   return (
     <div>
       <table className="table table-hover table-striped">
@@ -87,4 +87,4 @@ const Inventory = () => {
   );
 };
 
-export default Inventory;
+export default Table;

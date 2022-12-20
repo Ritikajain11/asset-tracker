@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import Inventory from './Inventory';
+import Table from './Table';
 import BasicSearch from './BasicSearch';
 import { Button } from 'react-bootstrap';
 
@@ -189,7 +189,7 @@ const AdvanceSearch = () => {
         <BasicSearch />
       )}
       <br /> <br />
-      {showResults && <Inventory />}
+      {showResults && <Table />}
     </div>
   );
 };
