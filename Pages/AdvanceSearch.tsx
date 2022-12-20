@@ -13,10 +13,6 @@ const AdvanceSearch = () => {
   const [eplId, setEplId] = useState('');
   const [status, setStatus] = useState('active');
 
-  useEffect = () => {
-    setStatus('');
-  };
-
   const submit = () => {
     updateResults(true);
   };

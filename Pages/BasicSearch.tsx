@@ -37,7 +37,7 @@ const BasicSearch = () => {
           Client Asset Tracker
         </h2>
         <div className="row" style={{ textAlign: 'right' }}>
-          <a href="/AdvanceSearch" onClick={AdvanceSearch}>
+          <a href="/AdvanceSearch" onClick={<AdvanceSearch />}>
             Advance Search
           </a>
         </div>

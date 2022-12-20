@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './Pages/Layout';
 import NoPage from './Pages/NoPage';
 import Inventory from './Pages/Inventory';
-import Home from './Pages/Home';
 import BasicSearch from './Pages/BasicSearch';
 import AdvanceSearch from './Pages/AdvanceSearch';
 import UpdateAsset from './Pages/UpdateAsset';
@@ -17,9 +16,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route element={<Home />} />
-          <Route element={<BasicSearch />} />
-          <Route index element={<AdvanceSearch />} />
+          <Route index element={<BasicSearch />} />
+          <Route element={<AdvanceSearch />} />
           <Route element={<Inventory />} />
           <Route exact path="/updateAsset/:id" element={<UpdateAsset />} />
           <Route path="*" element={<NoPage />} />
